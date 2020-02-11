@@ -1,9 +1,5 @@
-Questions- styling:
+Simple To-Do: DOM Scripting - Events, Part 1
 
--How do I change the "add me!" button?
--How do I change the background color of the "delete" button?
--How do I remove the bullet from the li?
--How do I style the checkbox?
--How do I position the form and h1?
+Add one more bit of functionality: a delete button which the user can use to delete to-dos they no longer need.
 
-All without CSS using MDL...?
+Using the skills you picked up in the earlier portfolio checkpoints, import MDL and improve the appearance of your to-do list.
