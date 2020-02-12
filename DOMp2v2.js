@@ -11,8 +11,8 @@ function onReady() {
 		toDos.push({
 		  title: newToDoText.value,
 		  complete: false,
-			id:id
-			id++
+			id: id
+			//id++
     });
 		newToDoText.value = '';
 		
@@ -32,11 +32,19 @@ function onReady() {
 			let deleteBtn = document.createElement('button');
 			deleteBtn.textContent = "Delete";
 			
-			deleteBtn.addEventListener('click', function(event){
+			deleteBtn.addEventListener('click', function(toDos){
 			
-				toDoList.filter(toDoList =>this.parentElement>0);//
-				renderTheUI();//
+				toDos = toDos.filter(toDo => toDo.id !== this.id){
+					arr.pop()
+  					return toDos
+				})
+			}
+					
+				
+				//toDos.filter(toDoList =>this.parentElement>id);//
+				renderTheUI();//}
 		})
+			id++
 			
 			newLi.textContent = toDo.title;
 			
@@ -56,9 +64,9 @@ function onReady() {
 		renderTheUI();
 }
 
-	function renderTheUI() {
+	//function renderTheUI() {
 
-  }
+  //}
 
 window.onload = function() {
   onReady();
